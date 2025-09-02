@@ -20,7 +20,7 @@ function ExpenseContainer() {
   async  function addExpense(title,amount)
    {
     try {
-        const newExpense = fetch("http://localhost:3333/post",
+        const newExpense = fetch("https://expense-tracker-8mib.onrender.com/post",
       {
       method:"POST",
       headers:{"Content-Type":"application/json"},
