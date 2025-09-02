@@ -33,7 +33,7 @@ function ExpenseContainer() {
 
 
   async function getExpenses(){
-    const response = await fetch("http://localhost:3333/get")
+    const response = await fetch("https://expense-tracker-8mib.onrender.com/get")
     const data= await response.json()
     setExpense(data.expense)
    }
@@ -42,7 +42,7 @@ function ExpenseContainer() {
    },[]) 
 
   async function deleteExpense(id){
-    await fetch (`http://localhost:3333/delete/${id}`,{
+    await fetch (`https://expense-tracker-8mib.onrender.com/delete/${id}`,{
       method:"DELETE"
     }); getExpenses();
   }
