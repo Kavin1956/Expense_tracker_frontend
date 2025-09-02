@@ -1,5 +1,5 @@
 import React from 'react'
-import ExpenseContainer from './Components/ExpenseContainer'
+import ExpenseContainer from "./components/ExpenseContainer";
 function App() {
   return (
     <div>
